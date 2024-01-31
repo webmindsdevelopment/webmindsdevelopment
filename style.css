@@ -134,7 +134,7 @@ header {
     margin: 8rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .contact-button button {
@@ -142,8 +142,8 @@ header {
     border: 1px solid #25D366;
     padding: 5px;
     position: relative;
-    width: 10em;
-    height: 2em;
+    width: 11em;
+    height: 2.5em;
     transition: 0.5s;
     font-size: 15px;
     border-radius: 0.4em;
@@ -156,7 +156,7 @@ header {
     left: 1.15em;
     margin: 0;
     padding: 0;
-    transition: .5s;
+    transition: 1s;
     color: #25D366;
 }
   
@@ -184,40 +184,122 @@ header {
   .contact-button button:hover {
     background-color: #25D366;
   }
-
   .tooltip {
     position: relative;
     display: flex;
-    font-size: 3rem;
 }
 
 .tooltip .tooltip-text {
     visibility: hidden;
-    width: 30rem;
-    height: 20rem;
-    background-color: #fff;
     color: #000;
     text-align: center;
-    border: 1px solid #000;
-    border-radius: 6px;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
     padding: 5px 0;
     position: absolute;
     z-index: 1;
     top: -30px;
-    left: 110%;
+    left: 45%;
     font-size: 3rem;
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 0.6s;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .tooltip:hover .tooltip-text {
     visibility: visible;
     opacity: 1;
 }
+.card-about {
+    width: 17em;
+    height: 15.5em;
+    background: #171717;
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Adicionei esta linha para centralizar o conteúdo horizontalmente */
+  }
+  
+  .card-about span {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 1em;
+    margin-top: 1em; /* Adicionei um espaço acima do título */
+  }
+  
+  .card-about .info {
+    font-weight: 0.1em;
+    color: white;
+    text-align: center;
+    font-size: 0.4em;
+    margin: 1em;
+  }
+  
+  .card-about .img {
+    display: flex;
+    width: 4.8em;
+    height: 4.8em;
+    background: white;
+    border-radius: 50%; 
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+    margin-top: 1em; /* Adicionei um espaço acima da imagem */
+  }
+  
+  .card-about img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para garantir que a imagem cubra completamente a div circular */
+    border-radius: 50%;
+  }
+  
+  .card-about .share {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+  
+  .card-about a {
+    color: white;
+    transition: .4s ease-in-out;
+  }
+  
+  .card-about a:hover {
+    color: red;
+  }
+  
+  .card-about button {
+    padding: 0.8em 1.7em;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: .4s ease-in-out;
+    margin-top: 1em; /* Adicionei um espaço acima do botão */
+  }
+  
+  .card-about button:hover {
+    background: red;
+    color: white;
+    cursor: pointer;
+  }
+
+ 
+
 
 .services {
     height: 100vh;
-    background-color: antiquewhite;
+    background-color: grey;
     padding: 10rem;
 }
 
@@ -231,18 +313,25 @@ header {
     gap: 10%;
     justify-content: space-evenly;
     margin-top: 3rem;
+    font-family: sans-serif;
 }
 
 .card {
-    //background-color: #25D366;
     height: 80%;
-    width: 35rem;
+    width: 45rem;
     display: flex;
+    transition: 0.4s ease-out;
     gap: 5rem;
+    border-radius: 2rem;
+    border: 2px solid black;
 }
-
+.card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+    border-color: #1287d4;
+  }
 .content > .photo {
-    background-color: #FFF;
+   
     border-radius: 50rem;
     width: 25rem;
     height: 25rem;
@@ -259,21 +348,23 @@ header {
 }
 
 .cardText {
-    border: 2px solid #000;
-    border-radius: 2rem;
+    border-top: 2px solid #000;
     padding: 1rem;
     height: 30rem;
+    border-radius: 0.5rem;
     margin-top: 3rem;
     text-align: center;
 }
 
 .cardText > .til {
+    font-family: fantasy;
     font-size: 3rem;
     text-align: center;
     margin-top: 1.5rem;
 }
 
 .cardText > .descrition {
+    font-family: monospace;
     margin-top: 2rem;
     font-size: 2rem;
     
@@ -291,13 +382,13 @@ header {
 }
 
 .contactFooter{
-    //background-color: red;
+    background-color: red;
     display: flex;
     width: 50%;
 }
 
 .nameContact {
-    //background-color: gold;
+    background-color: gold;
     display: flex;
     flex-direction: column;
     font-size: 4rem;
