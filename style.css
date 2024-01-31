@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+header {
+    background-color: rgb(31, 27, 27);
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 2rem;
+    margin-right: 5rem;
+}
+
+.nav > button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 1.5rem 3.2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin: .4rem .2rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.nav > button:hover {
+    background-color: #45a049;
+}
+
+.top {
+    width: 100%;
+    height: 800px;
+    background-image: url('assets/bag_top.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.history {
+    padding: 8rem;
+}
+
+.history > P {
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.alig_history {
+    display: flex;
+}
+
+.text {
+    width: 40%;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.phot_text {
+    background-color: #45a049;
+    margin-left: 15rem;
+    height: 40rem;
+    width: 40rem;
+}
+
+.contact {
+    background-color: blue;
+    height: 25rem;
+}
