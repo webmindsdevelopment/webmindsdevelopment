@@ -1,17 +1,18 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const textElement = document.getElementById('escrita');
-    const textContent = textElement.getAttribute('data-text') || ''; // Pega o texto do atributo data-text
-    const interval = 100;
-    let i = 0;
-  
-    function typeWriter() {
-      if (i < textContent.length) {
-        textElement.innerHTML += textContent.charAt(i);
-        i++;
-        setTimeout(typeWriter, interval);
-      }
+document.addEventListener("DOMContentLoaded", function () {
+    var textElement = document.querySelector('.text');
+    var photTextElement = document.querySelector('.phot_text');
+
+    function handleScroll() {
+        var scrollPosition = window.scrollY + window.innerHeight;
+
+        if (scrollPosition > textElement.offsetTop + textElement.offsetHeight / 2) {
+            textElement.classList.add('active');
+        }
+
+        if (scrollPosition > photTextElement.offsetTop + photTextElement.offsetHeight / 2) {
+            photTextElement.classList.add('active');
+        }
     }
-  
-    typeWriter();
-  });
-  
+
+    window.addEventListener('scroll', handleScroll);
+});
