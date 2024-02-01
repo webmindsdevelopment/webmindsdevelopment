@@ -22,30 +22,30 @@ header {
     margin-right: 5rem;
 }
 
-.nav > a {
+.nav>a {
     position: relative;
-  display: inline-block;
-  margin: 15px;
-  padding: 15px 30px;
-  text-align: center;
-  font-size: 18px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: #1287d4;
-  background: transparent;
-  cursor: pointer;
-  transition: ease-out 0.5s;
-  border: 2px solid #1287d4;
-  border-radius: 10px;
-  box-shadow: inset 0 0 0 0 #1287d4;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #1287d4;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #1287d4;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #1287d4;
 }
 
-.nav > a:hover {
+.nav>a:hover {
     color: white;
-  box-shadow: inset 0 -100px 0 0 #1287d4;
+    box-shadow: inset 0 -100px 0 0 #1287d4;
 }
 
-.nav > a:active{
+.nav>a:active {
     transform: scale(0.9);
 }
 
@@ -56,27 +56,29 @@ header {
     background-size: cover;
     background-position: center;
 }
-.animation-container{
+
+.animation-container {
     height: 100%;
     display: flex;
     justify-content: center;
 }
-  .escrita {
+
+.escrita {
     display: flex;
     align-items: center;
     justify-content: center;
-   font-size: 70px;
-   font-family: fantasy;
-   color: white;
+    font-size: 70px;
+    font-family: fantasy;
+    color: white;
 
-  }
+}
 
 .history {
     padding: 8rem;
     height: 80vh
 }
 
-.history > P {
+.history>P {
     font-size: 3.5rem;
     display: flex;
     justify-content: center;
@@ -105,11 +107,11 @@ header {
     background-color: rgb(148, 148, 148);
     height: 50vh;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     position: relative;
-    
+
 }
 
 .ajuContatc {
@@ -119,18 +121,18 @@ header {
 }
 
 .contact-orcamento {
-    //background-color: red;
+    /*background-color: red;*/
 }
 
-.contact-orcamento > h2 {
+.contact-orcamento>h2 {
     font-size: 4rem;
 }
 
-.contact-orcamento > p {
+.contact-orcamento>p {
     font-size: 2rem;
 }
 
-.contact-button{
+.contact-button {
     margin: 8rem;
     display: flex;
     flex-direction: column;
@@ -149,7 +151,7 @@ header {
     border-radius: 0.4em;
     margin-left: 2rem;
 }
-  
+
 .contact-button button p {
     position: absolute;
     top: 0.4em;
@@ -159,8 +161,8 @@ header {
     transition: 1s;
     color: #25D366;
 }
-  
-  .contact-button button svg {
+
+.contact-button button svg {
     position: absolute;
     top: 0.45em;
     right: 0.5em;
@@ -170,21 +172,22 @@ header {
     transition: 0.5s;
     height: 1em;
     fill: #fff
-  }
-  
-  .contact-button button:hover p {
+}
+
+.contact-button button:hover p {
     left: 0.5em;
     color: #fff
-  }
-  
-  .contact-button button:hover svg {
+}
+
+.contact-button button:hover svg {
     opacity: 1;
-  }
-  
-  .contact-button button:hover {
+}
+
+.contact-button button:hover {
     background-color: #25D366;
-  }
-  .tooltip {
+}
+
+.tooltip {
     position: relative;
     display: flex;
 }
@@ -210,6 +213,7 @@ header {
     visibility: visible;
     opacity: 1;
 }
+
 .card-about {
     width: 17em;
     height: 15.5em;
@@ -220,62 +224,66 @@ header {
     border-bottom-left-radius: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Adicionei esta linha para centralizar o conteúdo horizontalmente */
-  }
-  
-  .card-about span {
+    align-items: center;
+    /* Adicionei esta linha para centralizar o conteúdo horizontalmente */
+}
+
+.card-about span {
     font-weight: bold;
     color: white;
     text-align: center;
     display: block;
     font-size: 1em;
-    margin-top: 1em; /* Adicionei um espaço acima do título */
-  }
-  
-  .card-about .info {
+    margin-top: 1em;
+    /* Adicionei um espaço acima do título */
+}
+
+.card-about .info {
     font-weight: 0.1em;
     color: white;
     text-align: center;
     font-size: 0.4em;
     margin: 1em;
-  }
-  
-  .card-about .img {
+}
+
+.card-about .img {
     display: flex;
     width: 4.8em;
     height: 4.8em;
     background: white;
-    border-radius: 50%; 
+    border-radius: 50%;
     align-items: center;
     justify-content: center;
-    overflow: hidden; 
-    margin-top: 1em; /* Adicionei um espaço acima da imagem */
-  }
-  
-  .card-about img {
+    overflow: hidden;
+    margin-top: 1em;
+    /* Adicionei um espaço acima da imagem */
+}
+
+.card-about img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Para garantir que a imagem cubra completamente a div circular */
+    object-fit: cover;
+    /* Para garantir que a imagem cubra completamente a div circular */
     border-radius: 50%;
-  }
-  
-  .card-about .share {
+}
+
+.card-about .share {
     margin-top: 1em;
     display: flex;
     justify-content: center;
     gap: 1em;
-  }
-  
-  .card-about a {
+}
+
+.card-about a {
     color: white;
     transition: .4s ease-in-out;
-  }
-  
-  .card-about a:hover {
+}
+
+.card-about a:hover {
     color: red;
-  }
-  
-  .card-about button {
+}
+
+.card-about button {
     padding: 0.8em 1.7em;
     display: block;
     margin: auto;
@@ -285,16 +293,17 @@ header {
     background: #ffffff;
     color: rgb(0, 0, 0);
     transition: .4s ease-in-out;
-    margin-top: 1em; /* Adicionei um espaço acima do botão */
-  }
-  
-  .card-about button:hover {
+    margin-top: 1em;
+    /* Adicionei um espaço acima do botão */
+}
+
+.card-about button:hover {
     background: red;
     color: white;
     cursor: pointer;
-  }
+}
 
- 
+
 
 
 .services {
@@ -303,9 +312,9 @@ header {
     padding: 10rem;
 }
 
-.services > h2 {
-   font-size: 5rem;
-   text-align: center;
+.services>h2 {
+    font-size: 5rem;
+    text-align: center;
 }
 
 .typeServices {
@@ -325,13 +334,15 @@ header {
     border-radius: 2rem;
     border: 2px solid black;
 }
+
 .card:hover {
     transform: translateY(-20px);
     transition: 0.4s ease-out;
     border-color: #1287d4;
-  }
-.content > .photo {
-   
+}
+
+.content>.photo {
+
     border-radius: 50rem;
     width: 25rem;
     height: 25rem;
@@ -342,7 +353,7 @@ header {
     margin: auto;
 }
 
-.photo > img {
+.photo>img {
     width: 20rem;
     height: 20rem;
 }
@@ -356,42 +367,41 @@ header {
     text-align: center;
 }
 
-.cardText > .til {
+.cardText>.til {
     font-family: fantasy;
     font-size: 3rem;
     text-align: center;
     margin-top: 1.5rem;
 }
 
-.cardText > .descrition {
+.cardText>.descrition {
     font-family: monospace;
     margin-top: 2rem;
     font-size: 2rem;
-    
+
 }
 
 .celEmail {
     height: 25rem;
-    background-color: #1287d4;
+    background-color: #c1e1f7;
     padding: 4rem 10rem 5rem 10rem;
     display: flex;
+    justify-content: space-evenly;
 }
 
-.celEmail > img {
+.celEmail>img {
     height: 10rem;
 }
 
-.contactFooter{
-    background-color: red;
+.contactFooter {
+    /*background-color: red;*/
     display: flex;
-    width: 50%;
 }
 
 .nameContact {
-    background-color: gold;
     display: flex;
     flex-direction: column;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .contactFooter img {
