@@ -13,5 +13,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   
     typeWriter();
+
+    const additionalText = document.getElementById('resumo');
+    additionalText.innerHTML += textContent;
+
   });
   

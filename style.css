@@ -69,13 +69,43 @@ header {
     background-size: cover;
     background-position: center;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 5rem;
+}
+
+.resumo {
+    position: absolute;
+    top: 50%;
+    left: -100%; /* Começa fora da tela, à esquerda */
+    left: 0;
+    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+    animation: slideFromLeft 2s forwards; /* Usa a animação definida abaixo */
+    color: #fff;
+    font-size: 2rem;
+    padding: 0 0 0 10rem;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100%); /* Inicia fora da tela, à esquerda */
+    }
+    100% {
+        transform: translateX(0); /* Termina na posição inicial */
+    }
 }
 
 .animation-container {
-    height: 100%;
+    //background-color: rebeccapurple;
     display: flex;
-    justify-content: center;
-
+    padding: 0 0 0 10rem;
 }
 
 .escrita {
@@ -85,18 +115,66 @@ header {
     font-size: 70px;
     font-family: fantasy;
     color: white;
+}
 
+.buttonContact {
+    padding-left: 10rem;
+    padding-top: 10rem;
+}
+
+.buttonContact > a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid green;
+    width: 22rem;
+    height: 6rem;
+    background-color: green;
+    display: flex;
+    border-radius: .8rem;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    transition: background-color 0.6s, transform 0.4s;
+    animation: pulse 1.2s infinite;
+}
+
+.buttonContact > a:hover {
+    background-color: white;
+    color: green;
+    transform: scale(1.1);
+    transition: background-color 0.6s, transform 0.4s;
+    animation-name: none;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.05); 
+    }
+    100% {
+        transform: scale(1); 
+    }
 }
 
 .history {
-    background-color: #f2f2f2;
+    background-color: #f9f9f9;
     padding: 4rem;
     height: 100vh;
     text-align: center;
 }
 
-.history-title{
+.history-title h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
 
+.history-title{
     font-size: 36px;
     color: #333;
     margin-bottom: 20px;
@@ -113,9 +191,10 @@ header {
 
 .alig_history {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    justify-content:center;
-    position: relative;
+    //position: relative;
 }
 
 .text, .phot_text, .separator {
@@ -139,18 +218,31 @@ header {
     text-align: justify;
     justify-content: center;
     margin-left: 10rem;
+
+    flex: 2;
+    text-align: left;
 }
 
+
 .phot_text {
-    flex: 0 0 40%;
-    overflow: hidden;
+   flex: 0 0 40%;
+   /*  overflow: hidden;
     position: relative;
+    flex: 1;*/
+    margin-right: 20px;
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
 }
 
 .phot_text img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     transition: transform 0.5s;
+    border-radius: 10px;
 }
 
 .phot_text:hover img{
@@ -161,6 +253,7 @@ header {
     width: 2px;
     height: 100%;
     background-color: #333;
+    margin: 0 20px;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -169,7 +262,7 @@ header {
 
 .contact {
     background-color: rgb(148, 148, 148);
-    height: 50vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -180,19 +273,27 @@ header {
 
 .ajuContatc {
     display: flex;
-    justify-content: center;
-    width: 80%;
+    /*background-color: #1287d4;*/
+    width: 100%;
 }
 
 .contact-orcamento {
-    /*background-color: red;*/
+    display: flex;
+    padding-left: 30rem;
 }
 
-.contact-orcamento>h2 {
+.solicite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.solicite > h2 {
     font-size: 4rem;
 }
 
-.contact-orcamento>p {
+.solicite > p {
     font-size: 2rem;
 }
 
@@ -265,7 +366,7 @@ header {
     position: absolute;
     z-index: 1;
     top: -30px;
-    left: 45%;
+    left: 115%;
     font-size: 3rem;
     opacity: 0;
     transition: opacity 0.6s;
@@ -367,9 +468,6 @@ header {
     cursor: pointer;
 }
 
-
-
-
 .services {
     height: 100vh;
     background-color: grey;
@@ -402,7 +500,7 @@ header {
 .card:hover {
     transform: translateY(-20px);
     transition: 0.4s ease-out;
-    border-color: #1287d4;
+    /*border-color: #1287d4;*/
 }
 
 .content>.photo {
@@ -424,7 +522,7 @@ header {
 
 
 .cardText {
-    border-top: 2px solid #000;
+    //border-top: 2px solid #000;
     padding: 1rem;
     height: 30rem;
     border-radius: 0.5rem;
@@ -506,6 +604,11 @@ header {
     font-size: 2rem;
     display: flex;
     align-items: center;
+}
+
+.telFooter > a {
+    text-decoration: none;
+    color: #fff
 }
 
 
