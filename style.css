@@ -9,8 +9,7 @@
     font-size: 62.5%;
 }
 
-header {
-    background-color: rgb(31, 27, 27);
+.logo_nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,23 +50,29 @@ header {
 .nav>a:active {
     transform: scale(0.9);
 }
+
 @media screen and (max-width: 600px) {
-    nav {
-      flex-direction: column;
-      align-items: center;
+    .nav {
+        flex-direction: column;
+        align-items: center;
     }
 
-    nav a {
-      margin: 10px 0;
+    .nav>a {
+        margin: 10px 0;
     }
-  }
+}
 
-.top {
-    width: 100%;
-    height: 90vh;
+.home{
     background-image: url('assets/bag_top.jpg');
     background-size: cover;
     background-position: center;
+    height: 100vh;
+}
+
+.top {
+    width: 100%;
+    height: 80vh;
+    //background-image: url('assets/bag_top.jpg');
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -82,12 +87,14 @@ header {
 }
 
 .resumo {
-    position: absolute;
     top: 50%;
-    left: -100%; /* Começa fora da tela, à esquerda */
+    left: -100%;
+    /* Começa fora da tela, à esquerda */
     left: 0;
-    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
-    animation: slideFromLeft 2s forwards; /* Usa a animação definida abaixo */
+    white-space: nowrap;
+    /* Evita que o texto quebre em várias linhas */
+    animation: slideFromLeft 2s forwards;
+    /* Usa a animação definida abaixo */
     color: #fff;
     font-size: 2rem;
     padding: 0 0 0 10rem;
@@ -95,10 +102,13 @@ header {
 
 @keyframes slideFromLeft {
     0% {
-        transform: translateX(-100%); /* Inicia fora da tela, à esquerda */
+        transform: translateX(-100%);
+        /* Inicia fora da tela, à esquerda */
     }
+
     100% {
-        transform: translateX(0); /* Termina na posição inicial */
+        transform: translateX(0);
+        /* Termina na posição inicial */
     }
 }
 
@@ -122,7 +132,7 @@ header {
     padding-top: 10rem;
 }
 
-.buttonContact > a{
+.buttonContact>a {
     color: #fff;
     text-decoration: none;
     cursor: pointer;
@@ -140,7 +150,7 @@ header {
     animation: pulse 1.2s infinite;
 }
 
-.buttonContact > a:hover {
+.buttonContact>a:hover {
     background-color: white;
     color: green;
     transform: scale(1.1);
@@ -151,13 +161,15 @@ header {
 
 @keyframes pulse {
     0% {
-        transform: scale(1); 
+        transform: scale(1);
     }
+
     50% {
-        transform: scale(1.05); 
+        transform: scale(1.05);
     }
+
     100% {
-        transform: scale(1); 
+        transform: scale(1);
     }
 }
 
@@ -174,16 +186,18 @@ header {
     margin-bottom: 20px;
 }
 
-.history-title{
+.history-title {
     font-size: 36px;
     color: #333;
     margin-bottom: 20px;
-    text-align: center; /* Adicionando centralização */
-    font-family: 'Verdana', sans-serif; /* Aplicando a fonte Verdana */
+    text-align: center;
+    /* Adicionando centralização */
+    font-family: 'Verdana', sans-serif;
+    /* Aplicando a fonte Verdana */
 }
 
 
-.history > p {
+.history>p {
     font-size: 5.5rem;
     margin-bottom: 1.5rem;
     font-family: 'Trebuchet MS';
@@ -225,8 +239,8 @@ header {
 
 
 .phot_text {
-   flex: 0 0 40%;
-   /*  overflow: hidden;
+    flex: 0 0 40%;
+    /*  overflow: hidden;
     position: relative;
     flex: 1;*/
     margin-right: 20px;
@@ -245,7 +259,7 @@ header {
     border-radius: 10px;
 }
 
-.phot_text:hover img{
+.phot_text:hover img {
     transform: scale(1.1);
 }
 
@@ -279,21 +293,20 @@ header {
 
 .contact-orcamento {
     display: flex;
-    padding-left: 30rem;
+    padding-left: 8rem;
 }
 
 .solicite {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
-.solicite > h2 {
+.solicite>h2 {
     font-size: 4rem;
 }
 
-.solicite > p {
+.solicite>p {
     font-size: 2rem;
 }
 
@@ -469,7 +482,7 @@ header {
 }
 
 .services {
-    height: 100vh;
+    min-height: 100vh;
     background-color: grey;
     padding: 10rem;
 }
@@ -487,9 +500,25 @@ header {
     font-family: sans-serif;
 }
 
+@media (max-width: 768px) {
+    .typeServices {
+        /*background-color: red;*/
+        gap: 10%;
+        justify-content: space-evenly;
+        margin-top: 3rem;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
 .card {
-    height: 80%;
-    width: 45rem;
+    height: auto;
+    width: 100%;
     display: flex;
     transition: 0.4s ease-out;
     gap: 5rem;
@@ -545,36 +574,37 @@ header {
 }
 
 .celEmail {
-    height: 25rem;
+    min-height: 25rem;
+    background-color: #1287d4;
+    /*height: 25rem;
     padding: 4rem 10rem 5rem 10rem;
     display: flex;
     justify-content: space-evenly;
     display: flex;
     align-items: center;
-    background: #121212; 
-    background: linear-gradient(
-    135deg,
-    #121212 25%,
-    #1a1a1a 25%,
-    #1a1a1a 50%,
-    #121212 50%,
-    #121212 75%,
-    #1a1a1a 75%,
-    #1a1a1a
-  );
-  background-size: 40px 40px;
-
-  /* Animation */
-  animation: move 4s linear infinite;
+    background: #121212;
+    background: linear-gradient(135deg,
+            #121212 25%,
+            #1a1a1a 25%,
+            #1a1a1a 50%,
+            #121212 50%,
+            #121212 75%,
+            #1a1a1a 75%,
+            #1a1a1a);
+    background-size: 40px 40px;
+    */
+    /* Animation */
+    animation: move 4s linear infinite;
 }
 
 @keyframes move {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 40px 40px;
-  }
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 40px 40px;
+    }
 }
 
 .celEmail>img {
@@ -585,7 +615,7 @@ header {
     /*background-color: red;*/
     display: flex;
     color: #fff;
-    
+
 }
 
 .nameContact {
@@ -606,7 +636,7 @@ header {
     align-items: center;
 }
 
-.telFooter > a {
+.telFooter>a {
     text-decoration: none;
     color: #fff
 }
@@ -619,5 +649,5 @@ footer {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    
+
 }
