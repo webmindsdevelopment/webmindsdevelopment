@@ -15,4 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     window.addEventListener('scroll', handleScroll);
-});
+})
+
+
+function toggleNav() {
+    var navBtn = document.querySelector('.nav-btn');
+    var navLinks = document.querySelector('.nav-links');
+    navBtn.classList.toggle('active');
+    navLinks.classList.toggle('active');
+}
+;

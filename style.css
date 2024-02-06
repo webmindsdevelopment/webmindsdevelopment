@@ -35,7 +35,21 @@
     //margin-right: 5rem;
 }
 
-.nav>a {
+.nav-btn{
+    display: none;
+    cursor:pointer;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: blue;
+}
+.nav-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.nav-links>a {
     position: relative;
     display: inline-block;
     margin: 15px;
@@ -62,16 +76,222 @@
     transform: scale(0.9);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .nav-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+
+    .nav-btn.active + .nav-links {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+/* Ajustes responsivos */
+
+/* Ajustes responsivos para até 900 pixels */
+@media screen and (max-width: 900px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-btn, .nav-links a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .nav-links {
+        width: 100%;
+        position: static;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+
+    .nav-btn.active + .nav-links-container .nav-links {
+        display: flex;
+    }
+
+    .home {
+        padding: 10%;
+    }
+
+    .animation-container, .resumo, .buttonContact {
+        padding: 0 10%;
+    }
+
+    .container, .resumo, .buttonContact {
+        padding: 0 10%;
+    }
+
+    .buttonContact {
+        padding-left: 10%;
+        padding-top: 10%;
+    }
+
+    .history {
+        padding: 2rem;
+    }
+
+    .phot_text, .separator, .text {
+        margin-left: 0;
+    }
+
+    .text, .phot_text, .separator {
+        margin-left: 0;
+        text-align: center;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0);
+    }
+
+    .contact-orcamento {
+        padding-left: 0;
+    }
+
+    .contact-button {
+        margin: 2rem;
+    }
+
+    .card-about, .services {
+        padding: 2rem;
+    }
+
+    .typeServices {
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    .card, .contact, .celEmail, footer {
         flex-direction: column;
         align-items: center;
     }
 
-    .nav>a {
-        margin: 10px 0;
+    .contactFooter {
+        margin: 1rem;
+    }
+
+    .services, .cardText {
+        padding: 5%;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-btn, .nav-links a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .nav-links {
+        width: 100%;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+
+    .nav-btn.active + .nav-links-container .nav-links {
+        display: flex;
+    }
+
+    .home {
+        padding: 10%;
+    }
+
+    .animation-container, .resumo, .buttonContact {
+        padding: 0 10%;
+    }
+
+    .container, .resumo, .buttonContact {
+        padding: 0 10%;
+    }
+
+    .buttonContact {
+        padding-left: 10%;
+        padding-top: 10%;
+    }
+
+    .history {
+        padding: 2rem;
+    }
+
+    .phot_text, .separator, .text {
+        margin-left: 0;
+    }
+
+    .text, .phot_text, .separator {
+        margin-left: 0;
+        text-align: center;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0);
+    }
+
+    .contact-orcamento {
+        padding-left: 0;
+    }
+
+    .contact-button {
+        margin: 2rem;
+    }
+
+    .card-about, .services {
+        padding: 2rem;
+    }
+
+    .typeServices {
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    .card, .contact, .celEmail, footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactFooter {
+        margin: 1rem;
+    }
+
+    .services, .cardText {
+        padding: 5%;
+    }
+}
+
+
 
 /* --------- TOP --------- */
 
