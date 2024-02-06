@@ -1,272 +1,394 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/logo.png" type="image/png">
-    <title>WebMinds Development</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="WebMinds" />
+  <link rel="shortcut icon" href="images/logo.png" type="">
+
+  <title> WebMinds </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- slider stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- fonte style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- styles -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- Responsivo -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
 </head>
 
 <body>
 
-    <div class="home">
-        <div class="logo_nav">
-            <img src="assets/logo.png" alt="WebMinds Development">
-            <div class="nav">
-                <button class="nav-btn" onclick="toggleNav()"> Menu </button>
-                <div class="nav-links-container">
-                    <div class="nav-links">
-                        <a href="#home">Início</a>
-                        <a href="#historia">Quem somos</a>
-                        <a href="#faleConosco">Fale conosco</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="hero_area">
 
-        <div class="top">
-            <div class="animation-container">
-                <div class="escrita" id="escrita" data-text="Webminds Development"></div>
-                <script src="Webminds.js"></script>
-            </div>
-            <div class="container">
-                <div class="resumo">
-                    Criamos sites personalizados para aqueles que buscam excelência, eficiência e sucesso.
-                </div>
-            </div>
-            <div class="buttonContact">
-                <a
-                    href="https://api.whatsapp.com/send?phone=5547996828194&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20sites">CHAMAR
-                    NO WHATSAPP</a>
-            </div>
-        </div>
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg.png" alt="Formado de onda de layout">
+      </div>
     </div>
 
-    <div class="history" id="historia">
-        <div class="history-title">
-            <h2>QUEM SOMOS</h2>
-        </div>
-        <div class="alig_history">
-            <div class="phot_text">
-                <img src="assets/pht.jpg" alt="Foto da equipe da Webminds" />
+    <!-- header  -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="">
+            <span>
+              <img src="images/logo.png" alt="Logo WebMinds Dev">
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicos">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#quemsomos">Quem Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#equipe">Equipe</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- header fim -->
+    <!-- slider inicio -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      WebMinds <br>
+                      Development
+                    </h1>
+                    <p>
+                      Criamos sites personalizados para aqueles que buscam excelência, eficiência e sucesso.
+                    </p>
+                    <div class="btn-box">
+                      <a href="https://api.whatsapp.com/send?phone=5547996828194&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20sites" target="_blank" class="btn1">
+                        Solicite um Orçamento Agora
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="images/slider-img.png" alt="Imagem de um celular com animação">
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="separador"></div>
-            <div class="text">
-                <p>Bem-vindo à Webminds Development, sua parceira em criação digital. Fundada por dois ex-colegas
-                    apaixonados por tecnologia, Anderson e Jardel, a Webminds nasceu da união de suas habilidades e
-                    visões compartilhadas.</p>
-                <p>Com uma paixão mútua pelo desenvolvimento web e uma amizade sólida como base, Alex e Sofia
-                    decidiram
-                    criar uma empresa que combinasse inovação, excelência e atendimento personalizado.</p>
-                <p>Na Webminds, nossa missão é transformar ideias em experiências digitais memoráveis, ajudando
-                    nossos
-                    clientes a se destacarem em um mundo cada vez mais digitalizado. Estamos aqui para oferecer
-                    soluções
-                    criativas e sob medida para suas necessidades online.</p>
-            </div>
+          </div>
         </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+  <!-- service section -->
+  <section class="service_section layout_padding" id="servicos">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container heading_center">
+          <h2>
+            Alguns <span>Serviços</span>
+          </h2>
+          <p>
+            A <span> WebMinds </span>está sempre em busca da perfeição:
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/site1.png" alt="Imagem de Desenolvimento de WebSites">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Desenvolvimento de Websites
+                </h5>
+                <p>
+                  Transformamos suas ideias em websites impressionantes, oferecendo design responsivo e uma experiência
+                  de usuário intuitiva.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/site.png" alt="Imagem de Desenvolvimento de Aplicativo">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Desenvolvimento de aplicativos
+                </h5>
+                <p>
+                  Criamos softwares e aplicativos móveis sob medida, para você alcançar seus objetivos.<br>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/site2.png" alt="Imagem de Suporte Todos os Dias">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Suporte <span> Todos os dias</span>
+                </h5>
+                <p>
+                  Além do Desenvolvimento disponilizamos suporte para nossos clientes, podendo resolver problemas em seu
+                  aplicativo, sites ou em sua API.<br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- serviços -->
 
 
+  <!-- Quem Somos -->
 
-    <div class="contact" id="faleConosco">
-        <div class="ajuContatc">
-            <div class="contact-orcamento">
-                <div class="solicite">
-                    <h2>SOLICITE UM ORÇAMENTO</h2>
-                    <p>Chame um dos nossos consultores no WhatsApp</p>
-                </div>
-                <!-- Sobre mim Anderson -->
-                <div class="contact-button">
-                    <div class="tel">
-                        <div class="tooltip">
-                            <a href="https://wa.me/5547996828194">
-                                <button>
-                                    <p>Anderson Coitinho</p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-whatsapp" viewBox="0 0 16 16">
-                                        <path
-                                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
-                                        </path>
-                                    </svg>
-                                </button>
-                            </a>
-                            <span class="tooltip-text">
-                                <div class="card-about">
-                                    <div class="img"><img src="assets/bag_top.jpg"> </div>
-                                    <span>Anderson Coitinho</span>
-                                    <p class="info">Olá! Meu nome é Anderson Coitinho. Tenho 22 anos e sou apaixonado
-                                        por tecnologia desde a minha infância. Decidi seguir minha paixão e me formei em
-                                        Análise e Desenvolvimento de Sistemas. Ao longo dos anos, desenvolvi habilidades
-                                        sólidas em programação, design de software e gerenciamento de projetos. Sempre
-                                        busco estar atualizado com as últimas tendências e tecnologias do mercado. Sou
-                                        motivado, criativo e estou sempre em busca de novos desafios para aprimorar
-                                        minhas habilidades e contribuir para o sucesso dos projetos em que estou
-                                        envolvido.</p>
-                                    <div class="share">
-                                        <a href="https://github.com/AndersonCoitinho" target="_blank"><svg
-                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
-                                                </path>
-                                            </svg></a>
-                                        <a href="https://www.instagram.com/anderson_coitinho19/" target="_blank"><svg
-                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
-                                                </path>
-                                            </svg></a>
-                                    </div>
-                                </div>
-                            </span>
-                        </div>
-                    </div>
-                    <!-- Sobre MIM - Jardel Kahne -->
-                    <div class="tel">
-                        <div class="tooltip">
-                            <a href="https://wa.me/5555996661595">
-                                <button>
-                                    <p>Jardel Kahne</p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-whatsapp" viewBox="0 0 16 16">
-                                        <path
-                                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
-                                        </path>
-                                    </svg>
-                                </button>
-                            </a>
-                            <span class="tooltip-text">
-                                <div class="card-about">
-                                    <div class="img"><img src="assets/bag_top.jpg"> </div>
-                                    <span>Sobre mim</span>
-                                    <p class="info"> Lorem ipsum congue donec posuere ut maecenas neque auctor cursus,
-                                        purus ante posuere ante porta ultrices volutpat aenean. dui lobortis sem aliquam
-                                        sapien dapibus scelerisque aliquet feugiat tristique, phasellus volutpat lacus
-                                        nisl laoreet nam convallis erat. nulla rhoncus velit platea erat platea velit
-                                        hac sit, torquent nisi posuere litora at quisque curabitur maecenas porta, dui
-                                        neque cubilia est facilisis ultrices euismod. per adipiscing senectus enim quis
-                                        sed pulvinar fames dapibus eleifend, dapibus morbi sagittis cursus semper
-                                        molestie et ad,
-                                        integer aliquam sollicitudin adipiscing eleifend felis laoreet tincidunt. dictum
-                                        feugiat nam porttitor metus aliquam viverra donec, proin non eget suspendisse
-                                        vehicula. </p>
-                                    <div class="share">
-                                        <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                height="16" fill="currentColor" class="bi bi-github"
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
-                                                </path>
-                                            </svg></a>
-                                        <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                height="16" fill="currentColor" class="bi bi-twitter"
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
-                                                </path>
-                                            </svg></a>
-                                        <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                height="16" fill="currentColor" class="bi bi-instagram"
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
-                                                </path>
-                                            </svg></a>
-                                    </div>
-                                </div>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <section class="about_section layout_padding" id="quemsomos">
+    <div class="container  ">
+      <div class="heading_container heading_center">
+        <h2>
+          Quem <span>Somos</span>
+        </h2>
+        <p>
+          Bem-vindo à Webminds Development, sua parceira em criação digital. Fundada por dois ex-colegas apaixonados por
+          tecnologia, Anderson e Jardel, a Webminds nasceu da união de suas habilidades e visões compartilhadas.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/slider-img2.png" alt="Desenho de foguete decolando com notbook e celular ao lado">
+          </div>
         </div>
-    </div>
-
-    <div class="services">
-        <h2>Alguns dos serviços prestados</h2>
-        <div class="typeServices">
-            <div class="card">
-                <div class="content">
-                    <div class="photo">
-                        <img src="assets/responsivel.png" alt="Site Responsivel" />
-                    </div>
-                    <div class="cardText">
-                        <p class="til">Site Responsivo</p>
-                        <p class="descrition">Desenvolvemos um website que se ajusta perfeitamente a diferentes
-                            dispositivos, como
-                            computadores,
-                            tablets e smartphones, garantindo uma experiência de usuário otimizada em qualquer tela.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="content">
-                    <div class="photo">
-                        <img src="assets/design.png" alt="Design personalizado" />
-                    </div>
-                    <div class="cardText">
-                        <p class="til">Design personalizado</p>
-                        <p class="descrition">Criamos um design exclusivo que reflete sua identidade visual de forma
-                            única. Cada elemento, desde formas e cores até imagens e ícones, é cuidadosamente elaborado
-                            para representar sua empresa nos mínimos detalhes.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="content">
-                    <div class="photo">
-                        <img src="assets/design.png" alt="Suporte humanizado" />
-                    </div>
-                    <div class="cardText">
-                        <p class="til">Suporte humanizado</p>
-                        <p class="descrition">Oferecemos um canal direto de comunicação através do WhatsApp , onde você
-                            pode falar diretamente com nossa equipe de suporte para esclarecer suas dúvidas e atender
-                            suas necessidades de forma ágil e eficiente.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h3>
+              Somos a WebMinds
+            </h3>
+            <p>
+              Com uma paixão mútua pelo desenvolvimento e inovação, surgiu a ideia de criar uma empresa que combinasse
+              inovação, excelência e atendimento personalizado.
+            </p>
+            <p>
+              Na Webminds, nossa missão é transformar ideias em experiências digitais memoráveis, ajudando nossos
+              clientes a se destacarem em um mundo cada vez mais digitalizado.
+              Estamos aqui para oferecer soluções criativas e sob medida para suas necessidades online.
+            </p>
+            <a href="https://api.whatsapp.com/send?phone=5555996661595&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20sites" target="_blank">
+              Entre em Contato
+            </a>
+          </div>
         </div>
+      </div>
     </div>
+  </section>
 
-    <div class="celEmail">
-        <img src="assets/logo.png" alt="WebMinds Development">
-        <!--
-        <img src="assets/instagram.png" alt="Instagram da WebMinds Development">
-        -->
-        <div class="contactFooter">
-            <div class="nameContact">
-                Contatos
-                <div class="telFooter">
-                    <a href="https://api.whatsapp.com/send?phone=5547996828194&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20sites"
-                        target="_blank">
-                        <img src="assets/whatsapp.png" alt="WhastApp Consultor Anderson">(47) 9 9682 8194
-                    </a>
-                </div>
+  <!-- Quem somos fim-->
 
-                <div class="telFooter">
-                    <a href="https://api.whatsapp.com/send?phone=5555996661595&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20sites"
-                        target="_blank">
-                        <img src="assets/whatsapp.png" alt="WhastApp Consultor Jardel">(55) 9 9666 1595
-                    </a>
-                </div>
+  <!-- Porque nós -->
 
-                <div class="telFooter">
-                    <img src="assets/email.png" alt="E-mail da WebMinds Development"> webmindsdev@gmail.com
-                </div>
-            </div>
+  <section class="why_section layout_padding" id="pqnos">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Porque a <span>WebMinds?</span>
+        </h2>
+      </div>
+      <div class="why_container">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/atend.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Experiência Especializada
+            </h5>
+            <p>
+              Conte com a Webminds, uma equipe com vasta experiência no desenvolvimento web, capaz de transformar suas
+              ideias em soluções digitais de alta qualidade.
+            </p>
+          </div>
         </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/atend.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Atendimento Personalizado
+            </h5>
+            <p>
+              Diferenciamo-nos pelo atendimento único, priorizando suas necessidades e garantindo uma experiência
+              personalizada em cada interação.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/atend.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Inovação Contínua
+            </h5>
+            <p>
+              Na Webminds, mantemo-nos na vanguarda das tendências digitais, incorporando inovações tecnológicas para
+              garantir que sua presença online esteja sempre à frente da concorrência.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/atend.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Compromisso com a Qualidade
+            </h5>
+            <p>
+              Comprometemo-nos com a entrega de soluções de alto desempenho, seguras e confiáveis, assegurando que seu
+              projeto atenda e supere as expectativas.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <footer>
-        Criação de Site por WebMinds Development
-    </footer>
-    <script src="script.js"></script>
+  <!-- Pq Nós Fim -->
+
+  <!-- TEAM -->
+  <section class="team_section layout_padding" id="equipe">
+    <div class="container-fluid">
+      <div class="heading_container heading_center">
+        <h2 class="">
+          Nossa <span> Equipe</span>
+        </h2>
+      </div>
+
+      <div class="team_container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/coitinho.png" class="img1" alt="Foto de Anderson Coitinho">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Anderson Coitinho
+                </h5>
+                <p>
+                  Desenvolvedor Full Stack Jr.
+                </p>
+              </div>
+              <div class="social_box">
+                <a href="https://api.whatsapp.com/send?phone=5547996828194&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20sites" target="_blank">
+                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/andersoncoitinho/" target="_blank">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/anderson_coitinho19/" target="_blank">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/jardel.png" class="img1" alt="Foto de Jardel Kahne">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Jardel Kahne
+                </h5>
+                <p>
+                  Desenvolvedor Full Stack Jr.
+                </p>
+              </div>
+              <div class="social_box">
+                <a href="https://wa.me/5555996661595" target="_blank">
+                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jardel-kahne-872552120/" target="_blank">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/jardelkahne/" target="_blank">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- equipe fim -->
+
+
+  <!-- footer  -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> Desenvolvido por
+        <a href="https://www.instagram.com/webmindsdevelopment/" target="_blank">WebMinds</a>
+      </p>
+    </div>
+  </section>
+  <!-- footer fim -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+
 </body>
 
 </html>
