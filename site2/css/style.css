@@ -314,10 +314,14 @@ a:focus {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: none;
+  border-radius: 15px;
+
 }
 
 .slider_section .detail-box .btn-box .btn1:hover {
-  background-color: #007fa4;
+  background-color: #f7f8f8;
+  scale: 1.1;
+  color:black;
 }
 
 .slider_section .detail-box .btn-box .btn2 {
@@ -521,10 +525,13 @@ a:focus {
   transition: all 0.3s;
   border: none;
   margin-top: 15px;
+  border-radius: 15px;
 }
 
 .about_section .detail-box a:hover {
-  background-color: #007fa4;
+  background-color: #fdfdfd;
+  color: black;
+  scale: 1.1;
 }
 
 .why_section .box {
